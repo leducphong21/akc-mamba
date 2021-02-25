@@ -68,7 +68,8 @@ function initOrgVars {
    fi
    set -x
    ORG=$1
-   getDomain $ORG
+   #getDomain $ORG
+   DOMAIN=$1
    ORG_CONTAINER_NAME=${ORG//./-}
 
    # Host name of the Root CA (don't change this)
